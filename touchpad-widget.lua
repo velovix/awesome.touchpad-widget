@@ -24,7 +24,7 @@ function Touchpad:new(args)
 	-- Create imagebox widget and make it a button
 	obj.widget = wibox.widget.imagebox()
 	obj.widget:set_resize(false)
-	obj.widget:set_image(config.."/awesome.touchpad-widget/auto.png")
+	obj.widget:set_image(config.."/awesome.touchpad-widget/icons/auto.png")
 	obj.widget:buttons(awful.util.table.join(
 		awful.button({}, 1, function()
 			obj:switchMode()
@@ -72,13 +72,13 @@ function Touchpad:update()
 		else
 			run("synclient touchpadoff=0")
 		end
-		self.widget:set_image(config.."/awesome.touchpad-widget/auto.png")
+		self.widget:set_image(config.."/awesome.touchpad-widget/icons/auto.png")
 	elseif self.mode == "touchpadOn" then
 		run("synclient touchpadoff=0")
-		self.widget:set_image(config.."/awesome.touchpad-widget/touchpad.png")
+		self.widget:set_image(config.."/awesome.touchpad-widget/icons/touchpad.png")
 	elseif self.mode == "touchpadOff" then
 		run("synclient touchpadoff=1")
-		self.widget:set_image(config.."/awesome.touchpad-widget/external.png")
+		self.widget:set_image(config.."/awesome.touchpad-widget/icons/external.png")
 	end
 end
 
@@ -87,4 +87,3 @@ function Touchpad.mt:__call(...)
 end
 
 return Touchpad
-
