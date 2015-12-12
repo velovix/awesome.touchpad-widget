@@ -35,7 +35,7 @@ set the default mode with the `mode` option. Acceptable values are "touchpadOn",
 is "auto".
 
 	```
-	touchpad = touchpad_widget:new({vendor="your vendor")
+	local touchpad = touchpad_widget:new({vendor="your vendor")
 	```
 5. Finally, to add your widget to the bar, you'll have to add the following line somewhere after the `right_layout`
 table is created.
