@@ -4,10 +4,10 @@ as well as enable it only when a USB mouse is connected. This seems to be a real
 Unity doesn't allow you to auto-disable the touchpad like on Windows. But with this extension, we can achieve the
 seemingly impossible!
 
-###Dependencies
+### Dependencies
 No extra Awesome libraries are required, but you have to have the `synclient` and `lsusb` commands available.
 
-###Setup
+### Setup
 1. Navigate to your Awesome config directory (usually `~/.config/awesome`) and clone this repository with the following
 command:
 
